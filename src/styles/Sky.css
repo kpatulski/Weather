@@ -1,0 +1,33 @@
+.sky {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+  height: 550px;
+}
+
+.sky.pc {
+  border-radius: 40px 40px 0 0;
+}
+
+.mountain {
+  position: absolute;
+  right: 0;
+  bottom: -56px;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.25s ease-in-out;
+  z-index: 1;
+}
+
+.temp {
+  font-size: 110px;
+  font-weight: 300;
+  margin-bottom: -15px;
+}
+
+.weather-description {
+  font-size: 35px;
+}

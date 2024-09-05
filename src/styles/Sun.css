@@ -1,0 +1,17 @@
+.sun {
+  position: absolute;
+  right: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  transition: top 0.25s ease-in-out;
+}
+
+.moon {
+  position: absolute;
+  right: calc(50% - 45px);
+  margin-top: -5px;
+  width: 90px;
+  filter: drop-shadow(0 0 20px #fff4b7);
+  transition: top 0.25s ease-in-out;
+}

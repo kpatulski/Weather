@@ -1,0 +1,33 @@
+.container {
+  margin: 37px 30px;
+  position: relative;
+}
+
+#chart {
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  top: -12px;
+  right: -5px;
+  bottom: -12px;
+  left: -5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.overlay-button {
+  cursor: pointer;
+  border-radius: 18px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.overlay-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.overlay-button.selected {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}

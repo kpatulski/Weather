@@ -1,0 +1,54 @@
+.header {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  z-index: 1;
+}
+
+.input {
+  border: 0;
+  outline: 0;
+  font-size: 25px;
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: #ffffff;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.input:focus::placeholder {
+  opacity: 0.5;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 32px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.search-button:hover .search-icon {
+  transform: scale(1.1);
+}
+
+.refresh-icon {
+  width: 32px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-button:hover .refresh-icon {
+  transform: rotate(45deg);
+}
